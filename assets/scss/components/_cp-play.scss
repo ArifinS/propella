@@ -1,0 +1,36 @@
+.play-button {
+    position: relative;
+    &::after {
+        content: "";
+        height: 80px;
+        width: 80px;
+        background-color: $color-white;
+        border-radius: 80px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateY(-50%) translateX(-50%);
+    }
+    .play-btn {
+        height: 60px;
+        width: 60px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 60px;
+        background-color: rgb(181, 200, 196, .3);
+        position: relative;
+        z-index: 2;
+        transition: all .3s ease-in-out;
+        &:hover {
+            background-color: $color-primary;
+            svg {
+                color: $color-white;
+            }
+        }
+        svg {
+            color: $color-primary;
+            transition: all .3s ease-in-out;
+        }
+    }
+}

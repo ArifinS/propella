@@ -1,0 +1,111 @@
+/**
+ * Components: About.
+ */
+
+ .propella-img-wrapper {
+    .item-img {
+        border-radius: 12px;
+        img {
+            border-radius: 12px;
+        }
+        .small-img {
+            position: absolute;
+            bottom: -35px;
+            right: 40px;
+            border-radius: 12px;
+            background-color: $color-white;
+            box-shadow: -16px 16px 64px 0px rgba(0, 9, 7, 0.12);
+            padding: 10px;
+            img {
+                border-radius: 12px;
+            }
+        }
+        .play-area {
+            position: absolute;
+            bottom: 20px;
+            left: 54px;
+            height: 110px;
+            width: 280px;
+            background-color: $color-primary;
+            border-radius: 500px 0px 0px 500px;
+            z-index: 2;
+            .about-play {
+                padding: 20px;
+                position: relative;
+                z-index: 2;
+                &::after {
+                    content: '';
+                    position: absolute;
+                    width: 0;
+                    height: 0;
+                    right: 0px;
+                    bottom: -19px;
+                    border-top: 21px solid #082B24;
+                    border-right: 25px solid transparent;
+                }
+            }
+            .text {
+                color: #E7EDEC;
+                font-size: 24px;
+                font-weight: $font-semibold;
+                font-family: $font-title;
+                margin-left: 20px;
+            }
+        }
+    }
+    .dot-shape {
+        ul {
+            li {
+                position: absolute;
+                z-index: -1;
+                animation: move 10s infinite linear ;
+                &:nth-child(1) {
+                    bottom: -60px;
+                    right: 20px;
+                }
+                &:nth-child(2) {
+                    top: -20px;
+                    right: 150px;
+                }
+            }
+        }
+    }
+    .about-counter {
+        position: absolute;
+        right: 40px;
+        top: 30px;
+        transform: rotate(-90deg);
+        .exprience-number {
+            color: $color-dark-80;
+            font-size: 36px;
+            font-weight: 800;
+            line-height: 1;
+            text-transform: uppercase;
+            .label {
+                font-size: 14px;
+                font-weight: 400;
+                color: $color-dark-70;
+            }
+        }
+    }
+}
+.about-list {
+    margin-bottom: 30px;
+    ul {
+        li {
+            color: $color-black;
+            font-size: 18px;
+            line-height: 40px;
+            svg {
+                margin-right: 10px;
+            }
+        }
+        @media screen and (max-width: 760px) {
+            justify-content: center;
+        }
+    }
+} 
+
+
+  
+

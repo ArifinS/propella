@@ -1,0 +1,258 @@
+.propella-hero-wrap {
+    padding: 374px 0 290px;
+    .black-shape {
+        height: 30%;
+        width: 100%;
+        background-image: linear-gradient(to top, rgba(0, 0, 0, 0.00) 0%, #000 100%);
+        opacity: 0.6;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+    &:before {
+        content: "";
+        height: 100%;
+        width: 100%;
+        background-image: url(../../media/banner/banner-1.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        filter: grayscale(100%);
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+    &:after {
+        content: "";
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0, 23, 3, .7);
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+    @media only screen and (max-width: 1024px) {
+        padding: 145px 0 145px;
+    }
+}
+
+.banner-shape {
+    position: absolute;
+    bottom: -1px;
+    right: -1px;
+    z-index: 1;
+    @media only screen and (max-width: 992px) {
+        display:none
+    }
+}
+
+.propella-hero-layout {
+    position: relative;
+    z-index: 1;
+    @include media-only ("lg", min) {
+        width: 966px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .subtitle {
+        color: $color-white;
+        font-family: $font-title;
+        font-size: 20px;
+        font-weight: $font-medium;
+        letter-spacing: 0.4px;
+        text-transform: uppercase;
+    }
+    .title {
+        color: $color-white;
+        font-family: $font-title;
+        font-size: 72px;
+        font-weight: 600;
+        line-height: 120%;
+        letter-spacing: 4.32px;
+        text-transform: uppercase;
+        @media only screen and (max-width: 1024px) {
+            font-size: 50px;
+        }
+    }
+    .propella-button {
+        .propella-btn {
+            &.style-2 {
+                border: 1px solid $color-white;
+                color: $color-white;
+                &:hover {
+                    border-color: $color-white;
+                    background-color: $color-white;
+                    color: $color-primary;
+                    i {
+                        color: $color-primary;
+                    }
+                }
+                i {
+                    color: $color-white;
+                }
+            }
+        }
+    }
+}
+
+.hero-sidebar {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    bottom: 20px;
+    left: -48.5%;
+    .content {
+        background-color: $color-white;
+        padding: 10px 30px;
+        
+        @include media-only ("lg", min) {
+            transform: rotate(-90deg);
+            min-height: 60px;
+        }
+        .item-social-2 {
+            @include media-only ("lg", min) {
+                position: absolute;
+                left: 51.5%;
+            }
+            ul {
+                @include media-only ("lg", min) {
+                   transform: rotate(-270deg);
+                }
+                li {
+                    @include media-only ("lg", min) {
+                        margin-bottom: 5px;
+                    } 
+                }
+            }
+        }
+        .mail {
+            @include media-only ("lg",min) {
+               position: absolute;
+               left: 68%;
+            }
+            a {
+                color: #4d4d4d;
+                transition: all .3s ease-in-out;
+                &:hover {
+                    color: $color-primary;
+                    svg {
+                        color: $color-primary;
+                    }
+                }
+                svg {
+                    color: #4d4d4d;
+                    margin-right: 5px;
+                    transition: all .3s ease-in-out;
+                }
+            }
+        }
+        .phone {
+            @include media-only ("lg",min) {
+                position: absolute;
+                left: 87.5%;
+            }
+        }
+        @media screen and (max-width: 1758px) {
+            display: none;
+        }
+    }
+    @media screen and (max-width: 1798px) {
+        display: none;
+      }
+}
+
+.scroll-wrap {
+    text-align: center;
+    position: absolute;
+    bottom: -75px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    cursor: pointer;
+    .rt-scroll {
+        .scroll {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translateY(-50%) translateX(-50%);
+            z-index: 1;
+            &--style-2 {
+                transform: translateY(-50%) translateX(-55%);
+            }
+            @media only screen and (max-width: 992px) {
+                display: none;
+            }
+        }
+        .round-img {
+            height: 150px;
+            width: 150px;
+            background-color: $color-white;
+            border-radius: 50%;
+            border: 1px solid $color-dark-10;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            img {
+                animation-duration: 10s;
+            }
+        }
+    }
+
+    &--style-2 {
+        bottom: 105px;
+        left: 14%;
+        @media only screen and (max-width: 1200px) {
+            display: none;
+        }
+    }
+    &--style-3 {
+        bottom: 730px;
+        @media only screen and (max-width: 516px) {
+        bottom: 795px; 
+        }
+        @media only screen and (max-width: 500px) {
+            bottom: 867px; 
+            }
+    }
+
+}
+  #exTab1 .tab-content {
+    color : white;
+    background-color: #428bca;
+    padding : 5px 15px;
+  }
+  
+  #exTab2 h3 {
+    color : white;
+    background-color: #428bca;
+    padding : 5px 15px;
+  }
+  
+  /* remove border radius for the tab */
+  
+  #exTab1 .nav-pills > li > a {
+    border-radius: 0;
+  }
+  
+  /* change border radius for the tab , apply corners on top*/
+  
+  #exTab3 .nav-pills > li > a {
+    border-radius: 4px 4px 0 0 ;
+  }
+  
+  #exTab3 .tab-content { 
+    
+    color : white;
+    background-color: #428bca;
+    padding : 5px 15px;
+  }
+  
+  
+  
+  
+  
+  

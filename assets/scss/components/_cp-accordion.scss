@@ -1,0 +1,222 @@
+.accordion {
+    .accordion-item {
+        border: 0;
+        margin-bottom: 20px;
+        background-color: transparent;
+        border-bottom: 1px solid $color-dark-10;
+        &:last-child {
+            margin-bottom: 0;
+            border-bottom: 0;
+        }
+        .accordion-header {
+            .accordion-button {
+                display: block;
+                width: 100%;
+                text-align: left;
+                position: relative;
+                box-shadow: none;
+                transition: all .3s ease;
+                border: 0;
+                background-color: transparent;
+                padding: 0;
+                padding-bottom: 20px;
+                font-size: 22px;
+                font-weight: 500;
+                line-height: 30px;
+                border-radius: 0;
+                color: var(--color-primary); 
+                border-bottom: 1px solid $color-dark-10;
+                span {
+                    color: $color-green-100;
+                }
+                .accr-plus, 
+                .accr-minus {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background-color: transparent;
+                    color: $color-black;
+                    position: absolute;
+                    right: 0;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    transition: all 0.3s ease;
+                    font-size: 24px;
+                    border-radius: 0;
+                    &::before {
+                        width: auto;
+                        margin: 0;
+                    }
+                    @media only screen and (max-width: 479px) {
+                        right: 15px;
+                    }
+                }
+                .accr-plus {
+                    display: none;
+                }
+                &.collapsed {
+                    transition: all 0.3s ease;
+                    .accr-minus {
+                        display: none;
+                    }
+                
+                    .accr-plus {
+                        display: flex;
+                        color: var(--color-primary);
+                    }
+                }
+                &:focus {
+                    outline: 0;
+                    box-shadow: none;
+                }
+                &.style-2 {
+                    color: #001703;
+                    font-family: Inter;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 150%; 
+                    padding-bottom: 0px;
+                    border-bottom: none;
+                    margin-bottom: -1px;
+                    display: flex;
+                    gap: 10px;
+                    transition: all 0.3s ease-in-out;
+                    svg {
+                        transition: all 0.3s ease-in-out;
+                    }
+                    &::after {
+                        display: none;
+                    }
+                    a {
+                        color: $color-black;
+                    }
+                    &:hover {
+                        a {
+                            color: $color-primary; 
+                        }
+                        svg {
+                            fill: $color-primary;
+                        }
+                    }
+                }
+            }
+            .accordion-button.collapsed {
+                background-color: transparent;
+                color: $color-dark-80;
+                box-shadow: none;
+                border-bottom: 0;
+                span {
+                    color: #b3b3b3;
+                }
+            }
+        }
+        .accordion-body {
+           
+            padding: 25px 0;
+            border-top: 0;
+            background-color: transparent;
+            box-shadow: none;
+            &.style-2 {
+                padding: 0px;
+                p {
+                    color: $color-black;
+                    font-family: Inter;
+                    font-size: 15px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 150%; 
+                }
+            }
+        }
+        &.style-2 {
+            border-bottom: none;
+            .sub-menu {
+                .menu-item {
+                    padding: 5px 0px 10px 20px ;
+                    a {
+                        color:$color-black;
+                        font-family: Inter;
+                        font-size: 15px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 150%;
+                        transition: all 0.3s ease-in-out;
+                        &:hover {
+                            color: $color-primary;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &.style-2 {
+        .accordion-item {
+            border: 1px solid $color-dark-10;
+            border-radius: $border-radius-md;
+            margin-bottom: 20px;
+            background-color: transparent;
+            padding: 0;
+            &:last-child {
+                margin-bottom: 0;
+            }
+            .accordion-header {
+                .accordion-button {
+                    border: 0;
+                    padding: 0;
+                    font-size: 20px;
+                    color: var(--color-white); 
+                    border-bottom: 0;
+                    padding: 15px 30px 15px;
+                    background-color: $color-primary;
+                    border-radius: 8px 8px 0 0;
+                    span {
+                        -webkit-text-stroke: 1px var(--color-green-300);
+                        font-family: $font-title;
+                        font-size: 26px;
+                        font-weight: 500;
+                        color: transparent;
+                    }
+                    .accr-plus, 
+                    .accr-minus {
+                        right: 30px;
+                        color: var(--color-white);
+                    }
+                    .accr-plus {
+                        display: none;
+                    }
+                    &.collapsed {
+                        transition: all 0.3s ease;
+                        .accr-minus {
+                            display: none;
+                        }
+                    
+                        .accr-plus {
+                            display: flex;
+                            color: #b3b3b3;
+                        }
+                    }
+                }
+                .accordion-button.collapsed {
+                    color: $color-black;
+                    background-color: transparent;
+                    span {
+                        -webkit-text-stroke: 1px var(--color-green-200);
+                    }
+                }
+            }
+            .accordion-body {
+                padding: 0 30px 25px;
+                border-radius: 0 0 8px 8px;
+                box-shadow: 8px 8px 48px 0px rgba(15, 78, 65, 0.12);
+                position: relative;
+                z-index: 1;
+                background-color: $color-primary;
+                p {
+                    color: $color-green-200;
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}

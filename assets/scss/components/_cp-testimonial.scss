@@ -1,0 +1,98 @@
+.industry-testimonial-wrap {
+    background: $color-gray;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    padding: 300px 0px 270px 0px;
+    .rt-industry-testimonial {
+      @media only screen and (min-width: 1200px) {
+        padding-right: 212px;
+        padding-left: 212px;
+        }
+        .swiper {
+          margin-left: auto;
+          margin-right: auto;
+          position: relative;
+          overflow: hidden;
+          list-style: none;
+          padding: 0;
+          z-index: 1;
+      }
+      .item-quote {
+        margin-bottom: 143px;
+        color: $color-black;
+        text-align: center;
+        font-family: $font-title;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%; 
+      }
+      .rt-thumbnail-slider-thumb-style-1 {
+        position: absolute;
+        top: 69%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        width: 261px;
+        @media only screen and (max-width: 425px) {
+          top: 75%;
+      }
+      }
+      .swiper-slide-visible {
+        -webkit-filter: grayscale(100%);
+        filter: grayscale(100%);
+        opacity: 0.6 !important;
+        -webkit-transition: all 0.4s ease-in-out;
+        transition: all 0.4s ease-in-out;
+        cursor: pointer;
+        transform: scale(0.9);
+      }
+      .swiper-slide-thumb-active {
+        opacity: 1 !important;
+        -webkit-filter: grayscale(0%) !important;
+        filter: grayscale(0%) !important;
+        transform: scale(1);
+      }
+
+      .designation-area {
+        .title {
+          text-transform: uppercase;
+          color: $color-black;
+          text-align: center;
+          font-family: $font-body;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 0px; 
+        }
+        .sub-title {
+          color:color-green-800;
+          font-family: Roboto;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 46px; 
+        }
+      }
+    }
+    .shapes {
+      position: absolute;
+      bottom: 0px;
+      right: 0px;
+      @media only screen and (max-width: 992px) {
+        display:none
+       }
+    }
+    .shapes-2 {
+      position: absolute;
+      bottom: 0px;
+      left: 0px;
+      @media only screen and (max-width: 1200px) {
+        display:none
+       }
+    }
+    @media only screen and (max-width: 400px) {
+      bottom: 872px;
+     }
+}

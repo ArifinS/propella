@@ -1,0 +1,482 @@
+.course-details-content-wrapper {
+    margin-left: 35px;
+    .course-details-info {
+        .event-details-cover-img {
+           img {
+            border-radius: 14px;
+            width: 100%;
+           }
+        }
+        .course-info-bottom {
+            .meta-wrapper {
+                .meta-data  {
+                    gap: 30px;
+                    padding: 20px 0px 0px 0px;
+                    .data-information {
+                        gap: 8px;
+                        .author-name {
+                            color:  $color-black;
+                            font-family: $font-body;
+                            font-size: 16px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: 32px;
+                        }
+                    }  
+                    .tag {
+                        gap: 8px;
+                        .calender {
+                            color:  $color-black;
+                            font-family: $font-body;
+                            font-size: 16px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: 32px; 
+                        }
+                    } 
+                    .reading-time {
+                        gap: 8px;
+                        color: $color-black;
+                        font-family: $font-body;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 32px; 
+                    }
+                
+                }
+            }
+
+
+            .featured-course-title {
+                border-bottom: 1px solid #E5E5E5;
+                padding-bottom: 20px;
+                .featured-course-title-link {
+                    color: $color-black;
+                    font-family: $font-title;
+                    font-size: 36px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 46px;
+                    letter-spacing: -0.72px;
+
+                }
+            }
+        }
+    }
+
+    .overview-details {
+        .course-description {
+            .para-1 {
+                margin-bottom: 32px;
+                margin-top: 17px;
+                color:  $color-paragraph;
+                font-family:$font-body;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 28px; 
+            }
+            .para-2 {
+                margin-bottom: 47px;
+                color:  $color-paragraph;
+                font-family:$font-body;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 28px; 
+            }
+        }
+        .qoutation-area {
+            position: relative;
+            border-radius: 12px;
+            background: $color-background;
+            padding: 72px 55px 30px 37px ; 
+            margin-bottom: 44px;
+            position: relative;
+            .quotation-logo {
+                position: absolute;
+                left: 37px;
+                top: 36px;
+            }
+            .quote {
+                color: $color-black;
+                font-family: $font-title;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 34px; 
+            }
+            .shapes {
+                position: absolute;
+                bottom: 0px;
+                right: 0;
+            }
+            &::before {
+                content: '';
+                height: 210px;
+                width: 4px;
+                border-radius: 90px;
+                left: 0px;
+                top: 6px;
+                background-color: $color-primary;
+                position: absolute;
+            }
+        }
+       .para-3 {
+        margin-bottom: 44px;
+        color: $color-paragraph;
+        font-family:$font-body;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28px;
+       }
+       .propella-intorior-wrapper {
+        padding: 0px 131px 0px 131px;
+        @media only screen and (max-width: 765px) {
+            padding: 50px;
+          }
+       }
+       .nopadding {
+        padding: 5px;
+       }
+        .para-4 {
+            margin-bottom: 36px;
+            margin-top: 30px;
+            line-height: 28px; 
+        }
+    }
+    .blog-tag-share {
+        border-radius: 8px;
+        background: $color-background;
+        padding: 20px 0px;
+        margin-bottom: 44px;
+        .single-tag-area {
+            .tag-list  {
+                margin-left: 20px;
+                gap: 10px;
+                li {
+                    transition: all 0.3s ease-in-out;
+                    padding: 8px 16px;
+                    border-radius: 6px;
+                    border: 1px solid var(--green-dark-green-100, #B5C8C4);
+                    background: $color-white;
+                    a {
+                        color: $color-black;
+                        font-family: $font-body;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                        text-transform: capitalize;
+                        transition: all 0.3s ease-in-out;
+                    }
+                    &:hover {
+                        background-color: $color-primary;
+                        a {
+                            color: $color-white;
+                        }
+                    }
+                }
+                @media screen and (max-width: 776px) {
+                      margin-bottom: 20px;
+                  }
+            }
+        }
+        .single-share-area {
+            gap: 20px;
+            margin-right: 20px;
+            .title {
+                color: $color-black;
+                text-align: right;
+                font-family: $font-title;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+            }
+            .social-icon-list {
+                gap: 8px;
+                li {
+                    width: 40px;
+                    height: 40px;
+                    color: v$color-paragraph;
+                    font-family: Font Awesome 5 Brands;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    cursor: pointer;
+                    line-height: normal; 
+                    background-color: $color-white;
+                    padding: 10px 14px 10px 14px ;
+                    border-radius: 6px;
+                    transition: all 0.3s ease-in-out;
+                    border: 1px solid var(--green-dark-green-100, #B5C8C4);
+                  a {
+                    .fab {
+                        color: $color-paragraph;
+                        font-family: Font Awesome 5 Brands;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                        transition: all 0.3s ease-in-out;
+                    }
+                  }
+                  &:hover {
+                    background-color: $color-primary;
+                    .fab {
+                        color: $color-white
+                    }
+                  }
+                }
+            }
+        }
+    }
+    .rt-author-box {
+        border: 1px solid #DEE3E2;
+        padding: 25px 20px 25px 27px;
+        border-radius: 10px;
+        margin-bottom: 50px;
+        gap: 30px;
+        .post-author-img {
+            img {
+                border-radius: 10px;
+            }
+            @media screen and (max-width: 765px) {
+                 text-align: center;
+              }
+              &.style-2 {
+                @media only screen and (max-width: 1200px) {
+                    
+                }
+              }
+        }
+        .post-author-content {
+            .post-author-name {
+                color: $color-black;
+                font-family:$font-title;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+            }
+            .author-box-wrapper {
+                .author-box-button {
+                    border: 1px solid #DEE3E2;
+                    padding: 10px 17px 10px 17px;
+                    border-radius: 8px;
+                    transition: all 0.3s ease-in-out;
+                    a {
+                        color:$color-black;
+                        font-family: $font-body;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 150%; 
+                    }
+                    &:hover {
+                        background-color: $color-primary;
+                        a {
+                            color: $color-white;
+                        }
+                    }
+                }  
+                @media only screen and (max-width: 772px) {
+                    justify-content: center;
+                  }
+            }
+            @media only screen and (max-width: 772px) {
+                text-align: center;
+              }
+        }
+    }
+    .comment-section {
+        .title {
+            padding-bottom: 15px;
+            color: $color-black;
+            font-family: $font-title;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            border-bottom: 1px solid #DEE3E2;;
+        }
+        .comment-wrapper {
+            padding: 22px 0px;
+            gap: 25px;
+            &:last-child  {
+                .comment-content {
+                    border-bottom: none;
+                }
+              }
+            .avatar {
+                img {
+                    border-radius: 10px;
+                }
+            }
+            .comment-content {
+                flex: 1;
+                border-bottom: 1px solid #DEE3E2;
+                .comment-content-top {
+                    .commentor-info {
+                        .commentor-info-top {
+                            .comment-text {
+                                .commentor-name {
+                                    color: $color-black;
+                                    font-family: $font-title;
+                                    font-size: 20px;
+                                    font-style: normal;
+                                    font-weight: 600;
+                                    line-height: normal;
+                                }
+                                .comment-date-time {
+                                    gap: 5px;
+                                    margin-bottom: 15px;
+                                }
+                            }
+                            .comment-meta {
+                                .reply-btn {
+                                    color: $color-black;
+                                    text-align: center;
+                                    font-family: $font-body;
+                                    font-size: 14px;
+                                    font-style: normal;
+                                    font-weight: 500;
+                                    line-height: normal;
+                                    display: flex;
+                                    align-items: center;
+                                    gap: 5px;
+                                    justify-content: center;
+                                    padding: 10px 16px;
+                                    border-radius: 8px;
+                                    border: 1px solid var(--Line, #DEE3E2);
+                                    transition: all 0.3s ease-in-out;
+                                    svg {
+                                        transition: all 0.3s ease-in-out;
+                                        margin-top: 3px;
+                                    } 
+
+                                    &:hover {
+                                        color: $color-white;
+                                        background-color:$color-primary;
+                                        svg {
+                                            fill: $color-white;
+                                            rotate: 45deg;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .comment-reply {
+            margin-left: 60px;
+        }
+    }
+    .post-comment-form-wrapper {
+        border-radius: 12px;
+        padding: 50px;
+        background: $color-background;
+        .title {
+            color:  $color-black;
+            font-family: $font-title;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 150%; 
+            margin-bottom: 30px;
+        }
+        .post-comment-form {
+            .rt-wrapper {
+                .rt-form-container {
+                    // &:last-child  {
+                        .input-area {
+                            overflow: hidden;
+                            padding-left: 18px;
+                            border-radius: 8px;
+                            background: $color-white;  
+                            margin-bottom: 12px;
+                            border: 1px solid  #B5C8C4;
+                          
+                        }
+                    //   }
+                    .input-area {
+                        &:focus { 
+                            border: 1px solid rgb(48, 20, 20);
+                        }
+                        margin-bottom: 21px;
+                        .rt-form-input {
+                            border: none;
+                            padding: 18px 8px 18px 8px ;
+                            width: 100%;
+                            position: relative;
+                            &::before {
+                                content: url(//media/shape/from-svg-1.svg);
+                                position: absolute; 
+                                top: 0px;
+                            }
+                        }
+                        .rt-form-textarea {
+                            border: none;
+                            width: 100%;
+                            border-radius: 8px;
+                            padding: 30px 20px 30px 4px;
+                        }
+                    }
+                    .check-box-area {
+                        gap: 12px;
+                        margin-bottom: 25px;
+                        .rt-comment-post-form-checkbox {
+                            border: 1.5px solid #BBD1D4;
+                            background: #F1FCFA;
+                        }
+                        .rt-comment-post-label {
+                            span {
+                                color: $color-primary;
+                                font-family: $font-body;
+                                font-size: 16px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: 150%;
+                                text-decoration-line: underline; 
+                            }
+                        }
+                    }
+                    .form-btn {
+                        // padding: 15px 143px 15px 143px;
+                        background-color: $color-primary;
+                        border-radius: 8px;
+                        border: 1px solid transparent;
+                        .rt-form-submit-btn {
+                            color: $color-white;
+                            font-family:$font-body;
+                            font-size: 16px;
+                            font-style: normal;
+                            font-weight: 600;
+                            line-height: 150%;
+                        }
+                        &:hover {
+                            background-color: $color-green-900;
+                           a {
+                             color: $color-white;
+                           }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media screen and (max-width: 650px) {
+        margin: 0px;
+      }
+      &.style-2 {
+        margin-right: 35px;
+        @media screen and (max-width: 650px) {
+            margin: 0px;
+          }
+      }
+}

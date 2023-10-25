@@ -1,0 +1,116 @@
+.propella-property-feature {
+    background-color: #F1FCFA; 
+ 
+        .propella-property-box {
+            margin-bottom: 30px;
+            .property-img-wrapper{
+                position: relative;
+                img {
+                    border-radius: $border-radius-lg;
+                }
+                .property-round-img {
+                    position: absolute;
+                    top: 68%;
+                    left: 50%;
+                    -ms-transform: translate(-50%, -50%);
+                    transform: translate(-50%, -50%);
+                } 
+            }
+        }
+        .card {
+            border: none;
+            background: transparent;
+        }
+    .property-shape {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        @media only screen and (max-width: 1200px) {
+            display:none
+        }
+    }
+    &--style-2 {
+        background-color: $color-white;
+        padding-bottom: 80px;
+    }
+    .gallery-text {
+        &:hover {
+           color:#F1FCFA;
+        }
+    }
+}
+.property-button-wrapper {
+    .swiper-button-next {
+        font-size: 60px;
+        background:$color-white;
+        flex-direction: column;
+        border-radius: 50%;
+        padding: 15px;
+        width: 60px;
+        height: 60px;
+        position: absolute;
+        border: 1px solid #91AEA8;
+        top: 58%;
+        left: 84%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        transition: all 0.3s ease-in-out;
+        svg {
+            transition: all 0.3s ease-in-out; 
+        }
+        &:hover {
+            background-color: $color-primary;
+            svg {
+                fill: $color-white;
+            }
+        }
+        &::after {
+            display: none;
+        }
+        @media only screen and (max-width: 1836px) {
+            display: none;
+          }
+    }
+    .swiper-button-prev {
+        font-size: 60px;
+        background: rgb(255, 255, 255);
+        flex-direction: column;
+        border-radius: 50%;
+        padding: 15px;
+        width: 60px;
+        height: 60px;
+        position: absolute;
+        border: 1px solid #91AEA8;
+        top: 58%;
+        left: 16%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        transition: all 0.3s ease-in-out;
+        svg {
+            transition: all 0.3s ease-in-out; 
+        }
+        &:hover {
+            border: none;
+            background-color: $color-primary;
+            svg {
+                fill: $color-white;
+            }
+        }
+        &::after {
+            display: none;
+        }
+        @media only screen and (max-width: 1836px) {
+          display: none;
+        }
+    }
+    .active {
+        background-color: $color-primary;
+        svg {
+            fill: $color-white;
+        }
+    }
+}
+
+
+
+

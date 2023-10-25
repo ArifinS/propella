@@ -1,0 +1,41 @@
+.message-contact-wrap {
+    border: 1px solid #E5E5E5 ;
+    padding: 40px 20px 40px 20px;
+    .check-box-area {
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        gap:10px;
+        margin-left: 10px;
+        padding: 0px;
+        .form-check-input {
+            border-radius: 4px;
+            border: 1.5px solid #BBD1D4;
+            margin-left: 2px;
+        }
+    }
+    .rt-comment-post-label {
+        span {
+            color: $color-primary;
+            font-family: $font-body;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 150%;
+            text-decoration-line: underline;
+        }
+    }
+    &--style-2 {
+        padding: 40px 50px 40px 50px;
+    }
+    &.style-3 {
+        padding: 35px 50px 30px 50px;
+        @media only screen and (max-width: 500px) {
+            padding: 35px 25px 30px 25px;
+        }
+    }
+}
+.contact-form-style-1 .form-group .rt-form-control {
+color:  $color-dark-60;
+}

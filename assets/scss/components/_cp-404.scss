@@ -1,0 +1,22 @@
+.error-section  {
+    .rt-error-area  {
+        .rt-error-text-cotent {
+            .error-heading {
+                color:  $color-black;
+                font-family: $font-title;
+                font-size: 36px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 120%; 
+                margin-bottom: 20px;
+                @media only screen and (max-width: 1200px) {
+                    font-size: 30px;
+                }
+            }
+            .error-text {
+                margin-bottom: 25px;
+                padding: 0px 33px;
+            }
+        }
+    }
+}

@@ -1,0 +1,102 @@
+/**
+* Components: Tab.
+*/
+
+
+.tab--style--1 {
+	.nav-tabs {
+		border-bottom: 0;
+		justify-content: center;
+		margin-bottom: 60px;
+		position: relative;
+		z-index: 1;
+		.nav-item {
+			display: inline-block;
+			margin-right: 13px;
+			&:last-child {
+				margin-right: 0;
+			}
+			.nav-link {
+				background: #F2F2F2;
+				border-radius: 10px;
+				font-weight: 500;
+				font-size: 15px;
+				line-height: 20px;
+				text-transform: capitalize;
+				color: $color-black;
+				padding: 11px 30px;
+				&:focus {
+					outline: 0;
+					box-shadow: none;
+				}
+			}
+			.active {
+				color: $color-white;
+				background:$color-primary;
+			}
+		}
+	}
+}
+
+.floor-tab-wrap {
+    .section-heading {
+        margin-bottom: 35px;
+    }
+    .tab-list {
+        border-radius: 16px;
+        background: $color-white;
+        box-shadow: 8px 4px 64px 0px rgba(6, 60, 49, 0.12);
+        width: 450px;
+        margin-right: auto;
+        margin-left: auto;
+        text-align: center;
+        padding: 10px;
+        margin-bottom: 60px;
+        .nav-tabs {
+            border-bottom: 0;
+            justify-content: center;
+            margin-bottom: 0px;
+            position: relative;
+            z-index: 1;
+            .nav-item {
+                display: inline-block;
+                margin-right: 5px;
+                &:last-child {
+                    margin-right: 0;
+                }
+                .nav-link {
+                    background-color: $color-white;
+                    border-radius: 12px;
+                    font-weight: 600;
+                    text-transform: capitalize;
+                    color: $color-black;
+                    padding: 12px 25px;
+                    display: inline-block;
+                    border: 0;
+                    outline: 0;
+                    box-shadow: none;
+                    &:focus {
+                        outline: 0;
+                        box-shadow: none;
+                    }
+                    &:hover {
+                        border: 0;
+                        outline: 0;
+                        box-shadow: none;
+                    }
+                }
+                .active {
+                    color: $color-white;
+                    background:$color-primary;
+                }
+            }
+        }
+        &--style-2{
+            width: 70%;
+            margin-top: 120px;
+        }
+        @media screen and (max-width: 600px) {
+            width: 350px;
+          }
+    }
+}

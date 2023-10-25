@@ -1,0 +1,25 @@
+.propella-interior-wrap {
+    z-index: 1;
+    .inner {
+        border-bottom: 1px solid $color-dark-10;
+        padding-bottom: 30px;
+        margin-bottom: 40px;
+        .propella-button {
+            text-align: right;
+        }
+    }
+    .interior-shape {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+        @media only screen and (max-width: 1200px) {
+          display: none;
+        }
+    }
+    .gallery-text {
+        &:hover {
+            color: #E5F2EF; 
+        }
+    }
+}

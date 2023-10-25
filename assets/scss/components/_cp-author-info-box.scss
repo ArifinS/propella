@@ -1,0 +1,79 @@
+.propella-message-info {
+    position: relative;
+    .item-img {
+        border-radius: 20px;
+        img {
+            border-radius: 15px; 
+            width: 100%;
+        }
+    }
+    .info-wrap-desc {   
+        position: relative;
+        @media only screen and (max-width: 572px) {
+            flex-direction: column;
+            padding-bottom: 35px;
+        }   
+        .content {
+            .content-round-img { 
+                position: relative;
+                left: 0px;
+                top: -40px;
+            }
+            .content-top-img-wrapper {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                .name {
+                    color:$color-black;
+                        font-family: $font-title;
+                        font-size: 26px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: 150%; 
+                }
+                .content-top-img {
+                    border:1px solid #E5E5E5;
+                    border-radius: 50%;
+                    padding: 17px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-top: -70px;
+                    z-index: 1;
+                    margin-bottom: 0px;
+                    transition: all 0.3s ease-in-out;
+                    svg {
+                    transition: all 0.3s ease-in-out; 
+                    }
+                }
+            }
+            .designation  {
+                padding: 0px 0px 20px 0px;
+                &--style-2 {
+                    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+                }
+            }
+            &--style-2 {
+                background-color:$color-white;
+                border-radius: 20px;
+                margin: 0px 50px 0px 50px;
+                padding: 0px 64px 30px 49px;
+                box-shadow: rgba(215, 215, 226, 0.2) 0px 7px 29px 0px;
+            }
+            @media screen and (max-width: 1200px) {
+                margin-bottom: 30px;
+            }
+            &:hover {
+                .content-top-img  {
+                    background-color: $color-primary;
+                    svg {
+                        fill: $color-white;
+                    }
+                }
+            }
+        }
+        &--style-2 {
+            margin-top: -131px;
+        }   
+    }
+}

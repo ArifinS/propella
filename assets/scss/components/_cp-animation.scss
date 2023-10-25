@@ -1,0 +1,247 @@
+/**
+ * Components: Animation.
+ */
+
+
+/*------------------- toBottomFrom Animation -------------------*/
+
+@-webkit-keyframes toBottomFromTop {
+    49% {
+      -webkit-transform: translateY(-100%);
+      transform: translateY(-100%);
+    }
+    50% {
+      opacity: 0;
+      -webkit-transform: translateY(100%);
+      transform: translateY(100%);
+    }
+    51% {
+      opacity: 1;
+    }
+}
+@keyframes toBottomFromTop {
+    49% {
+      -webkit-transform: translateY(-100%);
+      transform: translateY(-100%);
+    }
+    50% {
+      opacity: 0;
+      -webkit-transform: translateY(100%);
+      transform: translateY(100%);
+    }
+    51% {
+      opacity: 1;
+    }
+}
+
+@-webkit-keyframes toBottomFromTop10 {
+  49% {
+    -webkit-transform: translateY(-10%);
+    transform: translateY(-10%);
+  }
+  50% {
+    opacity: 0;
+    -webkit-transform: translateY(10%);
+    transform: translateY(10%);
+  }
+  51% {
+    opacity: 1;
+  }
+}
+@keyframes toBottomFromTop10 {
+  49% {
+    -webkit-transform: translateY(-10%);
+    transform: translateY(-10%);
+  }
+  50% {
+    opacity: 0;
+    -webkit-transform: translateY(10%);
+    transform: translateY(10%);
+  }
+  51% {
+    opacity: 1;
+  }
+}
+
+/*------------------- toRightFromLeft Animation -------------------*/
+
+@-webkit-keyframes toRightFromLeft {
+  49% {
+        transform: translateX(100%);
+  }
+  50% {
+      opacity: 0;
+      transform: translateX(-100%);
+  }
+  51% {
+        opacity: 1;
+  }
+}
+@keyframes toRightFromLeft {
+  49% {
+        transform: translateX(100%);
+  }
+  50% {
+        opacity: 0;
+        transform: translateX(-100%);
+  }
+  51% {
+        opacity: 1;
+  }
+}
+
+/*------------------- Scale Animation -------------------*/
+
+@-webkit-keyframes scale-up-one {
+  0% {
+      transform: scale(1);
+  }
+  50% {
+      transform: scale(.5);
+  }
+  100% {
+      transform: scale(1);
+  }
+}
+
+@keyframes scale-up-one {
+  0% {
+      transform: scale(1);
+  }
+  50% {
+      transform: scale(.5);
+  }
+  100% {
+      transform: scale(1);
+  }
+}
+
+/*------------------- rtPulse Animation -------------------*/
+
+@keyframes rtpulse {
+  0% {
+      box-shadow: 0 0 0 0 rgba(255, 122, 0, 0.25);
+  }
+
+  70% {
+      box-shadow: 0 0 0 20px rgba(12, 31, 215, 0);
+  }
+
+  100% {
+      box-shadow: 0 0 0 0 rgba(12, 31, 215, 0);
+  }
+}
+/*------------------- Pulse border Animation -------------------*/
+
+@keyframes pulse-border {
+  0% {
+      transform: translateX(-50%) translateY(-50%) translateZ(0) scale(0.5);
+      opacity: 1;
+  }
+  100% {
+    
+      transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+      opacity: 0;
+  }
+}
+
+
+/*------------------- Move Animation -------------------*/
+
+@-webkit-keyframes move {
+  0% {
+        transform: translateY(0);
+  }
+  50% {
+      transform: translateY(-20px);
+    }
+
+  100% {
+      transform: translateY(0);
+  }
+}
+
+@keyframes move {
+  0% {
+      transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+  }
+
+  100% {
+      transform: translateY(0);
+    }
+}
+
+
+
+/*------------------- RightFromLeft -------------------*/
+
+@keyframes toRightFromLeft {
+  49% {
+        transform: translateX(100%);
+  }
+  50% {
+        opacity: 0;
+        transform: translateX(-100%);
+  }
+  51% {
+        opacity: 1;
+  }
+}
+
+/*------------------- Custom Wow -------------------*/
+
+.animation-scale-y {
+  transition: all 1s ease;
+  display: inline-block;
+  position: relative;
+  transform-origin: 50% 0%;
+  transform: translate3d(0px, 49.2404px, -41.3176px) rotateX(-80deg);
+  opacity: 0;
+  // transition-delay: 0.3s;
+  &.animate__animated {
+    transform-origin: 255.469px 35px;
+    transform: translate3d(0px, 0px, 0px);
+    opacity: 1;
+  }
+}
+
+@keyframes scroll {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-100%, 0);
+  }
+}
+
+.animation-scale-x {
+  clip-path: inset(0 100% 0 0);
+  &.animate__animated {
+    animation: qodef-image-fade-in .8s forwards cubic-bezier(.57,.57,0,.97);
+  }
+}
+
+
+@keyframes qodef-image-fade-in {
+  0% {
+    clip-path: inset(0 100% 0 0);
+  }
+  100% {
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+/*------------------- rtZoom Animation -------------------*/
+
+@keyframes rtZoom {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.25);
+  }
+}
+

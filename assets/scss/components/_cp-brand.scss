@@ -1,0 +1,54 @@
+.propella-brand-wrap {
+    background-color: $color-green-700;
+    &--style1{
+        background-color: $color-white;
+    }
+    &--style-2 {
+        padding:0px 0px 85px 0px; 
+        @media only screen and (max-width: 1200px) {
+            padding:0px 0px 50px 0px;
+        }
+    }
+    &--style-3 {
+        padding: 70px 0px 70px 0px;
+    }
+
+    .brand-heading {
+        color: $color-black;
+        text-align: center;
+        font-family: Inter;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 26px;
+        margin-bottom: 42px;
+    }
+    .bran-wrapper {
+        border-bottom: 2px solid #E5E5E5;
+        &--style-2 {
+            border: none;
+        }
+        @media only screen and (max-width: 1200px) {
+            border: none;
+          }
+    }
+}
+.brand {
+    text-align: center;
+    img {
+        filter: grayscale(100%);
+        opacity: 20%;
+        transition: all .4s ease-in-out;
+        cursor: pointer;
+        &:hover {
+            filter: grayscale(0);
+            opacity: 100%;
+        }
+    }
+    &--style-2 {
+        margin-bottom: 32px;
+    }
+    @media only screen and (max-width: 1200px) {
+        margin-bottom: 30px;    
+    }
+}

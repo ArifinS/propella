@@ -1,0 +1,89 @@
+.property-info-card {
+    padding: 0px 14px 2px 14px;
+    border-radius: 15px;
+    background-color: $color-white;
+    margin: 0px 30px 0px 30px;
+    position: relative;
+    margin: 0px 30px;
+    margin-top: -68px;
+    box-shadow: rgba(184, 184, 189, 0.2) 0px 7px 29px 0px;
+    .info-card-wrapper {
+        margin-top: -89px;
+        position: relative;
+            .property-logo-wrapper {    
+                position: relative;
+                top: 50%;
+                left: 50%;
+                -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+                z-index: 2;
+                .property-logo {
+                    border: 1px solid #E5E5E5;
+                    border-radius: 50%;
+                    padding: 16px;
+                    transition: all .4s ease-in-out;
+                    svg {
+                         transition: all .4s ease-in-out;
+                    }   
+                }
+            }
+            .property-card-title {
+                color:$color-black;
+                text-align: center;
+                font-family: $font-title;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 120%; 
+                margin-top: -15px;
+                transition: all .3s ease-in-out;
+            }
+            .para-text {
+                margin-bottom: 20px;
+            }
+            .content-distance {
+                border: 1px solid #DEE3E2;
+                gap: 12px;
+                padding: 8px 20px;
+                border-radius: 10px;
+                margin-bottom: 27px;
+                background-color: #EDFAF7;
+                a {
+                    color: $color-green-800;
+                    font-family: $color-body;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 24px;
+                    span {
+                        color:$color-black;
+                    }
+                }
+            }
+            &:hover {
+                .property-logo  {
+                    border: 1px solid transparent;
+                    border:$color-primary;
+                    background-color: $color-primary;
+                    box-shadow: rgba(199, 237, 233, 0.25)  0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+                }
+                .property-card-title {
+                    color: $color-primary;
+                }
+                svg {
+                    fill: $color-white;
+                }
+            }
+    }
+    @media screen and (max-width: 1200px) {
+        margin-bottom: 30px;
+      }
+      .property-round-img {
+        position: absolute;
+        top: -40px;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+        z-index: 1;
+      }
+}

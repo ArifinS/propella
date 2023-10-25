@@ -1,0 +1,103 @@
+.propella-message-info {
+    .section-heading {
+        border-bottom: 1px solid $color-green-400;
+        padding-bottom: 30px;
+        margin-bottom: 35px;
+        .heading-title {
+            color: $color-white;
+        }
+        p {
+            color: $color-green-200;
+        }
+    }
+    &.style-2 {
+        .info-wrap-desc {
+            .content {
+                .name {
+                    color: $color-black;
+                }
+                .designation {
+                    color: $color-paragraph;
+                }
+                .contact {
+                    svg {
+                        color: $color-primary;
+                    }
+                    a {
+                        color: $color-paragraph;
+                        transition: all .3s ease-in-out;
+                        &:hover {
+                            color: $color-primary;
+                        }
+                    }
+                }
+                .time {
+                    color: $color-paragraph;
+                }
+            }
+        }
+    }
+}
+
+.info-wrap-desc {
+    gap: 30px;
+    .item-img {
+        img {
+            border-radius: 12px;
+        }
+    }
+    .content {
+        flex: 1;
+        .name {
+            color: $color-white;
+            font-family: $font-title;
+            font-size: 26px;
+            font-weight: $font-semibold;
+            line-height: 150%;
+        }
+        .designation {
+            color: $color-green-300;
+        }
+        .contact {
+            margin-bottom: 10px;
+            svg {
+                color: $color-white;
+                margin-right: 12px;
+            }
+            img {
+                margin-right: 12px;
+            }
+            a {
+                color: $color-green-100;
+                transition: all .3s ease-in-out;
+                &:hover {
+                    color: $color-white;
+                }
+            }
+        }
+        .time {
+            margin-bottom: 0;
+            color: $color-green-100;
+        }
+    }
+}
+.message-contact-wrap {
+    background-color: $color-white;
+    border-radius: 12px;
+    padding: 35px 50px 30px;
+    .subtitle {
+        margin-bottom: 25px;
+        color: $color-black;
+        font-family:$font-title;
+        font-size: 26px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 150%; /* 39px */
+        &--style-2 {
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 150%;
+        }
+    }
+}

@@ -1,0 +1,118 @@
+.propella-feature-box {
+    border-radius: 12px;
+    background-color: $color-white;
+    padding: 40px 30px 30px 40px;
+    z-index: 1;
+    position: relative;
+    margin-bottom: 24px;
+
+    &:hover {
+        .feature-icon {
+            background-color: $color-white;
+            svg {
+                color: $color-primary;
+            }
+        }
+        &::before {
+            height: 100%;
+            transition: all height .4s ease;
+        }
+        .title {
+            a {
+                color: $color-white;
+            }
+        }
+        p {
+            color: $color-white;
+        }
+        .feature-button {
+            .feature-btn {
+                color: $color-white;
+                i {
+                    transform: rotate(0deg);
+                    color: $color-white;
+                }
+            }
+        }
+        .big-feature-icon {
+            visibility: visible;
+            opacity: 1;
+            svg {
+                animation: zoomIn 1s forwards;
+            }
+        }
+    }
+    &::before {
+        content: "";
+        height: 0;
+        width: 100%;
+        background-color: $color-primary;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        border-radius: 12px;
+        z-index: -1;
+        transition: all .4s ease-in-out;
+    }
+    .title {
+        a {
+            font-size: 24px;
+            transition: all .3s ease-in-out;
+        }
+    }
+    p {
+        margin-bottom: 35px;
+        transition: all .3s ease-in-out;
+    }
+    .feature-button {
+        .feature-btn {
+            color: $color-black;
+            font-size: 18px;
+            font-weight: $font-medium;
+            transition: all .3s ease-in-out;
+            i {
+                transform: rotate(-30deg);
+                color: $color-primary;
+                transition: all .3s ease-in-out;
+                margin-left: 8px;
+            } 
+        }
+    }
+    .big-feature-icon {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        visibility: hidden;
+        opacity: 0;
+        transition: all .3s ease-in-out;
+        svg {
+            color: rgba(255, 255, 255, 0.04);
+            transition: all .3s ease-in-out;
+        }
+    }
+}
+
+.feature-icon {
+    height: 80px;
+    width: 80px;
+    background-color: #F1FCFA;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-bottom: 25px;
+    transition: all width .4s ease;
+    svg {
+        color: $color-primary;
+        transition: all width .4s ease;
+    }
+    &--style-2 {
+        background-color: $color-primary;
+        margin-bottom: 18px;
+        transition: all .3s ease-in-out;
+        svg {
+            fill: $color-white;
+            transition: all .3s ease-in-out;
+        }
+    }
+}

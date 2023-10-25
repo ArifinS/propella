@@ -1,0 +1,26 @@
+.propella-feature-wrap {
+    background-color:$color-background;
+    z-index: 1;
+    .feature-shape {
+        li {
+            position: absolute;
+            z-index: -1;
+            &:nth-child(1) {
+                top: 0;
+                left: 0;
+                @media only screen and (max-width: 1200px) {
+                    display:none
+                }
+            }
+            &:nth-child(2) {
+                bottom: 0;
+                right: 0;
+                @media only screen and (max-width: 1024px) {
+                    display:none
+                }
+            }
+        }
+    }
+}
+
+

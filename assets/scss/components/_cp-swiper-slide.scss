@@ -1,0 +1,365 @@
+
+.hero-wrape-propella {
+  position: relative;
+  .shapes {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.3;
+    z-index: 1;
+    @media only screen and (max-width: 992px) {
+      display:none
+     }
+  }
+  nav {
+    position: absolute;
+    right: 90px;
+    bottom: 0px;
+    z-index: 1;
+    .pagination  {
+      height: 100px;
+      background-color: $color-white;
+      .page-item  {
+        background-color: $color-white;
+        padding: 19px 0px;
+        border: 1px solid transparent;
+        .page-link {
+          border: 1px solid transparent;
+          border: none;
+          border-radius: 50%;
+          width: 62px;
+          height: 50px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+          font-family:$font-title;
+          font-size: 22px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: normal;
+          color: $color-paragraph;
+          padding: 30px 0px;
+          &:focus {
+            z-index: 3;
+            color:none;
+            background-color: $color-white;
+            outline: none;
+            box-shadow: none;
+            color: $color-primary !important;
+            border: 1px solid $color-primary;
+          }
+          &:hover {
+            background-color: $color-white;
+          }
+        }
+        // .active {
+        //   color: $color-primary !important;
+        //   border: 1px solid $color-primary;
+        // } 
+        &.style-2 {
+          padding-right: 20px;
+        }
+        &.style-3 {
+          margin-left: 38px;
+        }
+      }
+    }
+  }
+  #eventlog {
+      height: 1200px;
+    margin-bottom: 30px;
+  }
+    .events {  
+      padding: 10px;
+      border: 2px dashed #aaa;  
+      background-color: #fafafa;
+      color: #444;    
+      overflow: hidden;
+      height: 120px;  
+      border-radius: 5px 5px;
+    }
+    #image-slider-frame {
+      clear: both;
+    }
+    #image-slider-1-wrap {
+      // height: 797px;
+      padding: 398px 0px;
+      width: 100%;
+      position: relative;  
+      overflow: hidden;
+    
+    .frame-0 {
+      position: absolute;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+      z-index: 0;
+      width: 100%;
+      height: 100%;    
+      background-position: center center;
+      background-size: cover;
+      position: absolute;
+      top: 0;
+      left: 100%;
+      height: 100%;
+      width: 100%;
+      &::before {
+        content: "";
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0, 23, 3, 0.7);
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+      } 
+    }
+    .frame-1 {
+      position: absolute;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: 100% 100%;
+      z-index: 1;
+      width: 100%;
+      height: 100%;
+      background-position: center center;
+      background-size: cover;
+      position: absolute;
+      top: 0;
+      left: 100%;
+      height: 100%;
+      width: 100%;
+      &::before {
+        content: "";
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0, 23, 3, 0.7);
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+      } 
+    } 
+    &::before {
+      content: '';
+    }     
+    @media only screen and (max-width: 992px) {
+      padding: 370px 0px;
+    }
+  }
+  #image-slider-1-wrap .frame-text {
+    z-index: 3;        
+    position: absolute;        
+    bottom: 368px;    
+    width: 100%;                
+    top: 38%;
+    left: 49%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-30%, -50%);
+    .hero-para-text {
+      color: $color-white;
+      text-align: center;
+      font-family: $font-title;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 500;
+      letter-spacing: 0.4px;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+    .hero-heading {
+      color: $color-white;
+      font-family: $font-title;
+      font-size: 56px;
+      font-style: normal;
+      font-weight: 700;
+      letter-spacing: 1.12px;
+      margin-bottom: 40px;
+      padding: 0px 70px 0px 0px;
+      @media only screen and (max-width: 1440px) {
+        padding: 0px;
+      }
+      @media only screen and (max-width: 992px) {
+        font-size:45px ;
+      }
+    }
+    h1 {      
+      text-align: start;
+      font-weight: bold;
+      color: #eec;
+      font-size: 3em;	
+      small {
+        color: rgba(255, 255, 255, 0.5);
+        font-size: 0.8em;
+        margin-left: 10px;
+      }
+    }
+    @media only screen and (max-width: 1200px) {
+      left: 33%;
+    }
+  }
+  #image-slider-1-wrap {
+    button {
+      &.btn-prev, 
+      &.btn-next,
+      &.btn-1,
+      &.btn-2,
+      &.btn-3,
+      &.btn-close {    
+        z-index: 2;
+        position:absolute;
+        width: 109px;
+        height: 100px;
+        background: rgba(255, 255, 255, 0.3);
+        border: none;  
+        color: $color-black;
+        outline: 0;
+      }
+      &.btn-prev {
+        bottom: 0px;
+        right: 300px;    
+        border: none;
+        color: $color-black;
+        background-color: $color-white;
+        &::after {
+          font-family: FontAwesome;
+          position: absolute;
+          content: url(../../media/testimonial/arrow-1.svg);
+          top: 41px;
+          left: 33px;
+          
+        }
+      }
+      &.btn-next {
+      bottom: 0px;
+        right: 0;   
+        background-color: $color-white;
+        &::after {
+          font-family: FontAwesome;
+          content: url(../../media/testimonial/arrow-2.svg);
+        }
+      }
+      &.btn-1 {
+        bottom: 0px;
+        right: 228px;    
+        border: none;
+        border-radius: 0px 5px 5px 0;
+        color: $color-black;
+        &::after {
+          font-family: FontAwesome;
+          content:'1';
+        }
+      }
+      &.btn-close {  
+        right: 10px;
+        top: 10px;  
+        width: 20px;
+        height: 20px;  
+        padding-top: 0px;
+        padding-left: 5px;
+        
+        &::after {        
+          font-family: FontAwesome;
+          content:'\f00d';            
+        }    
+      }      
+    }     
+    &:hover {
+      button.btn-prev, 
+      button.btn-next,
+      button.btn-close {
+        background: $color-white; 
+      }
+
+  }  
+  #image-slider-1-wrap .pagination {
+    z-index: 3;
+  }
+  #image-slider-2 { 
+    display: none;  
+  }
+  #image-slider-2-wrap {  
+    height: 300px;
+    width: 400px;
+    position: relative;    
+    border: 4px solid #888;
+    box-shadow: 0px 0px 5px black;   
+    .frame-0 {
+      position: absolute;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+      z-index: 0;
+      width: 100%;
+      height: 100%;         
+    }
+
+    .frame-1 {
+      position: absolute;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: 100% 100%;
+      z-index: 1;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  // close button
+  #image-slider-2-wrap {
+    button {        
+      &.btn-close {    
+        z-index: 2;      
+        position:absolute;
+        right: 10px;
+        top: 10px;  
+        width: 25px;
+        height: 25px;  
+        background: none;
+        border: 2px solid rgba(255,255,255,.5);        
+        border-radius: 50% 50%;      
+        color: rgba(255,255,255,.85);      
+        padding: 0;  
+        box-shadow: 1 1 5 rgba(0,0,0,.50);      
+        text-shadow: 1 1 5 rgba(0,0,0,.50);      
+        padding-left: 1px;
+        padding-top: 0;   
+        outline: 0;
+              
+        &::after {        
+          font-family: FontAwesome;
+          content:'\f00d';            
+        }
+      }   
+      
+      &.btn-close:hover {  
+        background: none; 
+        color: $color-white;
+      }        
+    }       
+  }
+    #image-slider-2-wrap {
+      .progress {
+        z-index: 2;      
+        position: absolute;        
+        right: 3px;
+        bottom: 3px;      
+        margin: 0;
+        padding: 0;      
+        height: 50%;
+        width: 9px;
+        background: rgba(0,0,0,.5);
+        .indicator {                
+          background: rgba(255,255,255,.75);        
+          width: 6px;
+          margin-left: 2px;
+          border: 0;        
+          border-radius: 10px 10px;
+          transition: all .2s ease-out,-webkit-transform .2s ease-out;        
+        }
+      }
+    }
+  }
+}

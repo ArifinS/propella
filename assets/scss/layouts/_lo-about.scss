@@ -1,0 +1,57 @@
+.propella-about-wrap {
+    @include media-only ("lg", min) {
+    }
+    z-index: 1;
+    .about-shape {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        z-index: -1;
+        opacity: .2;
+        @media only screen and (max-width: 1200px) {
+            display:none
+        }
+    }
+    .about-counter {
+        &--style2 {
+            position: absolute;    
+            right: 350px;
+            top: 123px;
+        }
+    }
+    .exprience-number {
+
+        &--style2{
+            color: $color-primary !important;
+            font-family: $font-body;
+            font-size: 48px;
+            font-style: normal;
+            font-weight: 800;
+            line-height: normal;
+            letter-spacing: -2.88px;
+            text-transform: uppercase;
+
+        }
+    }
+    .about-list-wrapper {
+        gap: 72px;
+    }
+    .para-text {
+        margin-bottom: 45px;
+    }
+    .title-bottom {
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+    .title-top {
+        margin-top:17px;
+    }
+    .about-shape-2 {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        @media only screen and (max-width: 1200px) {
+            display: none;
+  }
+    }
+}

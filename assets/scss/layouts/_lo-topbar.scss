@@ -1,0 +1,83 @@
+.rt-top-content  {
+    flex: 1;
+    .topbar {
+        background-color: $color-primary;
+        padding: 10px 40px 10px 57px;
+        .rt-topbar-details-information {
+            gap: 38px;
+            .item  {
+                gap: 10px;
+                position: relative;
+                a {
+                    color:$color-white;
+                    font-family: Inter;
+                    font-size: 15px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                }
+                &::after {
+                    content: "";
+                    position: absolute;
+                    right: -22px;
+                    top: 50%;
+                    -webkit-transform: translateY(-50%);
+                    transform: translateY(-50%);
+                    width: 1px;
+                    height: 55px;
+                    background: $color-green-700;
+                }
+                &:last-child {
+                    &::after {
+                        display: none;
+                    }
+                }
+            }
+        }
+        .rt-topbar-right {
+            .social-wrap {
+                .rt-top-social {
+                    gap: 8px;
+                    .follow {
+                        color:$color-white;
+                        font-family: Inter;
+                        font-size: 15px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: normal;
+                        margin-right: 4px;
+                    }
+                    .social-icon-top {
+                        width: 30px;
+                        height: 30px;
+                        border: 1px solid #3F7167;
+                        border-radius: 50%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        .fab {
+                            color: var(--green-dark-green-200, #91AEA8);
+                            text-align: center;
+                            font-family: Font Awesome 5 Brands;
+                            font-size: 15px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: normal;
+                        }
+                        &:hover {
+                            background-color: $color-white;
+                            transition: all .3s ease-in-out;
+                            .fab {
+                                color:$color-primary;
+                              
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        @media screen and (max-width: 1200px) {
+            padding: 12px 12px 12px 29px;
+          }
+    }
+}

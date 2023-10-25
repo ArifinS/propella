@@ -1,0 +1,39 @@
+.right-swiper {
+    right: 22%;
+    padding: 15px;
+    background-color: $color-white;
+    border: 1px solid #6AA38C;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    top: 42%;
+    &::after {
+        display: none;
+        
+    }
+    @media only screen and (max-width: 1534px) {
+       right: 30px;
+    }
+    @media only screen and (max-width: 992px) {
+        display: none;
+    }
+}
+.left-swiper {
+    left: 22%;
+    padding: 15px;
+    background-color: $color-white;
+    border: 1px solid #6AA38C;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    top: 42%;
+    &::after {
+        display: none;
+    }
+    @media only screen and (max-width: 1534px) {
+       left: 30px;
+     }
+     @media only screen and (max-width: 992px) {
+     display: none;
+    }
+}

@@ -1,0 +1,51 @@
+.gallery-text {
+    text-align: right;
+    font-family: Inter;
+    font-size: 100px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%; 
+    color: $color-white;
+    text-shadow: -1px 1px 0 #B5C8C4,
+                  1px 1px 0 #B5C8C4,
+                 1px -1px 0 #B5C8C4,
+                -1px -1px 0 #B5C8C4;
+    &--style2 {
+        color: #F1FCFA;
+    }
+    @media screen and (max-width: 500px) {
+        display: none;
+      }
+      &.style-2 {
+        text-align: right;
+        font-family: Inter;
+        font-size: 100px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 150%;
+        opacity: 0.2;
+        rotate: 90deg;
+        position: absolute;
+        right: -200px;
+        top: 294px;
+      } 
+      &:hover {
+        color: $color-gray;
+      }
+      &.style-3 {
+        text-align: right;
+        font-family: Inter;
+        font-size: 100px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 150%;
+        opacity: 0.2;
+        rotate: 90deg;
+        position: absolute;
+        right: -200px;
+        top: 294px;
+      } 
+      &:hover {
+        color: #acd8cf;
+      }
+}

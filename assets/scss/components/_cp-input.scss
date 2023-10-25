@@ -1,0 +1,65 @@
+/**
+ * Components: Input.
+ */
+
+ .input-group {
+    width: 100%;
+    position: relative;
+    &::before {
+        content: url(../../media/shape/mail.svg);
+        position: absolute;
+        top: 16px;
+        left: 15px;
+        z-index: 4;
+    }
+    .form-control {
+        background-color: $color-green-700;
+        border: 0;
+        border-radius: 8px !important;
+        height: 48px;
+        width: 100%;
+        font-size: 16px;
+        line-height: 28px;
+        color: $color-white;
+        padding: 0px 0px 0px 40px;
+        &:focus {
+            outline: 0;
+            box-shadow: none;
+        }
+        &::placeholder {
+            color: $color-green-300;
+        }
+    }
+    .btn-outline-secondary {
+        border: 0;
+        color: $color-primary;
+        background-color: $color-green-400;
+        border-radius: 8px !important;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        height: 38px;
+        width: 38px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 5px;
+        transition: all .4s ease-in-out;
+        z-index: 4;
+        &:hover {
+            background-color: $color-primary;
+            color: $color-black;
+            img {
+                animation: headShake 1.5s;
+                color: $color-black;
+            }
+        }
+        img {
+            transition: all .4s ease-in-out;
+        }
+        &:focus {
+            outline: 0;
+            box-shadow: none;
+        }
+    }
+}

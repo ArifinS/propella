@@ -1,0 +1,57 @@
+/*================================
+//  Pagination [component]
+=================================*/
+
+.pagination-wrapper {
+    margin-top: 30px;
+    display: inline-block;
+    margin-bottom: 25px;
+    ul.pagination {
+        .active {
+            color: $color-primary;
+            }
+        gap: 12px;
+        li {
+            border-radius: 8px;
+            a {
+                font-family: inter;
+                font-weight: 500;
+                line-height: 26px;
+                text-align: center;
+                color: #666;
+                border-radius: 6px;
+                border: 1px solid  #DEE3E2;
+                &:hover {
+                    color: $color-white;
+                }
+            }
+            &:first-child {
+                a {
+                    background: $color-white;
+                    width: 44px;
+                    height: 44px;
+                    border-radius: 5px;
+                }
+           
+            }
+            &:last-child {
+                a {
+                    background: $color-white;
+                    width: 44px;
+                    height: 44px;
+                    border-radius: 5px;
+                }
+            }
+            .page-item-2 {
+                padding: 8px 17px 8px 17px;
+                width: 44px;
+                height: 44px;
+            }
+        }
+    }
+    .page-link:focus {
+        color: $color-white;
+        background-color: $color-primary;
+        box-shadow: 0 0 0 0.25rem rgba(255, 255, 255, 0.25);
+    }
+}     

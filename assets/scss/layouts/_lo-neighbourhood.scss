@@ -1,0 +1,11 @@
+.propella-neighbourhood-wrap {
+    background-color: $color-gray;
+    &--style2 {
+        background-color: $color-primary;
+    }
+    .propella-neighbourhood-box-2 {
+        @media only screen and (max-width: 1200px) {
+            margin-bottom: 60px;
+        }
+    }
+}

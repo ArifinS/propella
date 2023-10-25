@@ -1,0 +1,33 @@
+.propella-blog-wrap {
+    z-index: 1;
+    .shape {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+        @media only screen and (max-width: 1200px) {
+            display:none
+        }
+    }
+    &.style-2 {
+        background-color: $color-gray;
+        .shape {
+            position: absolute;
+            bottom: 0;
+            left: auto;
+            right: 0;
+            @media only screen and (max-width: 1200px) {
+                display:none
+            }
+        }
+    }
+    &--style-3 {
+        padding: 0px 0px 90px 0px;
+        @media only screen and (max-width: 590px) {
+            padding: 0px 0px 60px 0px ;
+        }
+    }
+    &.style-5 {
+        padding-bottom: 93px;
+    }
+}

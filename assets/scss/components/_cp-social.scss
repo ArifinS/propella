@@ -1,0 +1,47 @@
+.item-social {
+    ul {
+        gap: 12px;
+        justify-content: end;
+        li {
+            a {
+                color: $color-white;
+                height: 40px;
+                width: 40px;
+                border: 1px solid #3F7167;
+                border-radius: 50px;
+                background-color: transparent;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                transition: all .4s ease-in-out;
+                &:hover {
+                    background-color: $color-white;
+                    color: $color-black;
+                    border: 1px solid transparent;
+                }
+            }
+        }
+        @media only screen and (max-width: 1200px) {
+            justify-content: start;
+        }
+    }
+}
+
+.item-social-2 {
+    ul {
+        gap: 20px;
+        li {
+            a {
+                transition: all .3s ease-in-out;
+                &:hover {
+                    svg {
+                        color: $color-primary;
+                    }
+                }
+                svg {
+                    color: #4d4d4d;
+                }
+            }
+        }
+    }
+}

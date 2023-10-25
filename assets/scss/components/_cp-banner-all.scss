@@ -1,0 +1,63 @@
+.rt-banner-section {
+    background-image: url(../../media/Banner-all/pages-1.jpg);
+    position: relative;
+    height: 100%;
+    width: 100%;
+    padding: 125px 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    .black-shape {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 23, 3, 0.7);
+        right: 0;
+        bottom: 0;
+        opacity: 5;
+        z-index: -1;
+    }
+    .rt-banner-bg {
+        .rt-banner-overlay {
+            .rt-banner-overlay-content  {
+                .rt-banner-title {
+                    color:  $color-white;
+                    font-family:$font-title;
+                    font-size: 48px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: normal;
+                }
+                .rt-banner-sub-text {
+                    a {
+                        color: $color-green-800;
+                        font-family: $font-body;
+                        font-size: 18px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                        @media only screen and (max-width: 1200px) {
+                           font-size: 15px;
+                        }
+                    }
+                    svg {
+                        margin: 0px 10px;
+                    }
+                    span {
+                        color: $color-white;
+                        @media only screen and (max-width: 1200px) {
+                            font-size: 14px;
+                         }
+                    }
+                }
+            }
+        }
+    }
+}
+

@@ -1,0 +1,86 @@
+.rt-call-to-action-section {
+    .rt-call-to-action-content-wrapper {
+        background-image: url(../../../media/contact-information/2.svg);
+        background-color: rgb(225, 228, 228); 
+        border-radius: 30px;
+        padding: 46px 0px 0px 60px;
+        box-shadow: rgba(191, 218, 219, 0.45) 0px 60px 40px -7px;
+        .call-to-action-wrapper {
+            padding: 0px 0px 41px 0px;
+            .rt-call-to-action-heading-area {
+                .rt-section-heading-title {
+                    color: $color-black;
+                    font-family: $font-title;
+                    font-size: 36px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 125%; 
+                    margin-bottom: 30px;
+                    &--style-2 {
+                        color:$color-white;
+                    }
+                    @media only screen and (max-width: 1200px) {
+                        font-size: 30px;
+                    }
+                }
+            }
+            .contact-information {
+                gap: 30px;
+                .contact-details {
+                    .item {
+                        gap: 10px;
+                        .faq-svg-wrapper {
+                            background-color: $color-white;
+                            border-radius: 50%;
+                            padding: 10px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                        }
+                        a {
+                            color: $color-black;
+                        }
+                        .phon-number {
+                            color: $color-white; 
+                            &.style-2 {
+                                color: $color-black;
+                                font-weight: 500;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .left-side {
+            position: relative;
+            img {
+    
+                border-radius: 20px;
+            }
+        }
+        &--style-2 {
+            background-image: url(../../../media/contact-information/3.svg);
+            background-color:$color-primary;
+        }
+        @media only screen and (max-width: 512px) {
+            padding: 20px 0px 0px 30px;
+        }
+        &.style-2 {
+            box-shadow: none;
+        }
+    }
+    &--style-2 {
+        margin-top: -176px;
+        position: relative;
+        z-index: 1;
+        @media only screen and (max-width: 400px) {
+            margin-top: -1106px;
+        }
+    }
+    &--style-3 {
+        margin-top: 0px;
+        position: relative;
+        // z-index: 1;
+        padding-bottom: 120px;
+    }
+}
